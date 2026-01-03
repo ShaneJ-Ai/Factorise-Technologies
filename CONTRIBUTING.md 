@@ -1,0 +1,124 @@
+# Quick Start
+
+### Clone
+```
+git clone https://github.com/ShaneJ-Ai/Factorise-Technologies.git
+cd Factorise-Technologies
+```
+# Contributing Guide
+
+## 1) Core rules (production-grade)
+
+### Protected branches
+- `main` and `develop` are protected.
+- Direct pushes are blocked (PRs only).
+- Required checks before merge:
+  - CI must pass (lint/test/build)
+  - Required approvals (team setting; recommended: 1–2)
+  - Branch must be up-to-date with the target branch
+- Force-push disabled on protected branches.
+
+### Stability expectations
+- `main` is always production-ready.
+- `develop` is integration-ready (staging-ready). It may change frequently, but must not be broken.
+
+---
+
+## 2) Branch model 
+
+### Branches
+- `main`: production
+- `develop`: integration / staging
+- `feature/<short-desc>`: new functionality
+- `bugfix/<short-desc>`: non-urgent fixes
+- `release/<yyyy-mm-dd>` or `release/<version>`: stabilization for an upcoming prod release
+- `hotfix/<short-desc>`: urgent production fixes from `main`
+
+### Naming 
+- `feature/users-crud`
+- `bugfix/fix-validation-message`
+- `release/2026-01-15`
+- `hotfix/fix-login-500`
+
+---
+
+## 3) Standard workflow (feature/bugfix → develop)
+
+### A) Start from latest develop
+```bash
+git checkout develop
+git pull origin develop
+```
+
+## 2. Create a Feature Branch
+```
+git checkout -b feature/<short-name>
+```
+## 3. Work & Commit
+```
+git add -A
+git commit -m "feat: short, clear description"
+
+```
+
+
+# 🧼 Clean Git Workflow (Rebase)
+
+This project always uses rebase to keep history clean and readable.
+
+## Sync main
+```
+git checkout main
+git pull --rebase origin main
+```
+## Rebase Your Branch (Before PR)
+```
+git fetch origin
+git rebase origin/main
+```
+## If Conflicts Occur
+```
+git status
+```
+# fix conflicts
+```
+git add -A
+git rebase --continue
+```
+## Abort If Needed
+```
+git rebase --abort
+```
+
+
+# 📤 Push Your Branch
+```
+git push -u origin feature/<short-name>
+```
+## Push Rejected? (Branch Behind)
+```
+git pull --rebase origin main
+git push
+```
+
+
+
+# 🚨 Hard Reset 
+
+## Force local branch to match remote:
+```
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+```
+
+# 🧠 
+```
+git checkout main && git pull --rebase
+git checkout -b feature/x
+```
+### work + commit
+```
+git fetch && git rebase origin/main
+git push -u origin feature/x
+```
