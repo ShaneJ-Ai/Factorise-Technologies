@@ -177,3 +177,30 @@ lerna-debug.log
 *.user
 *.userosscache
 
+# Expo / React Native
+.expo/
+.expo-shared/
+apps/mobile/.expo/
+apps/mobile/.expo-shared/
+apps/mobile/dist/
+apps/mobile/web-build/
+apps/mobile/npm-debug.log*
+apps/mobile/yarn-debug.log*
+apps/mobile/yarn-error.log*
+apps/mobile/.env
+apps/mobile/.env.example
+apps/mobile/node_modules/
+apps/mobile/.expo/
+apps/mobile/.expo-shared/
+apps/mobile/dist/
+
+# Mobile app deps
+apps/**/node_modules/
+apps/**/.expo/
+apps/**/.expo-shared/
+apps/**/dist/
+apps/**/build/
+
+# Ignore mobile assets
+apps/mobile/assets/
+mobile/assets/
