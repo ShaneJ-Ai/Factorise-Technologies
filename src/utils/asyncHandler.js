@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/utils/asyncHandler.js
+//SPDX-License-Identifier: LicenseRef-LICENSE
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
 export const asyncHandler = (fn) => (req, res, next) =>

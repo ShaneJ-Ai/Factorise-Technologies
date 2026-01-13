@@ -1,7 +1,8 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/middleware/error.js
+//SPDX-License-Identifier: LicenseRef-LICENSE
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
-// predictable API errors
+// predictable API errors for browsers
 
 export function notFound(req, res, next) {
   res.status(404).json({ message: "Route not found" });

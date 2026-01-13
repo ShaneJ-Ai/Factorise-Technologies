@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/routes/user.routes.js
+//SPDX-License-Identifier: LicenseRef-LICENSE
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
-/// (temporary stub so server boots) 
-//This stub proves your server boots and routing works; in the next iteration, ill replace it with real CRUD + Prisma + Zod
+
 
 import { Router } from "express";
 import { z } from "zod";
