@@ -1,9 +1,9 @@
-// src/app.js
-
+//SPDX-License-Identifier: LicenseRef-LICENSE
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
-//middleware + routes
+// src/app.js
 
+import tasksRouter from "./routes/tasks.routes.js";
 import express from "express";
 import helmet from "helmet";
 import cors from "cors";
@@ -11,7 +11,11 @@ import rateLimit from "express-rate-limit";
 import usersRouter from "./routes/users.routes.js";
 import { errorHandler, notFound } from "./middleware/error.js";
 
+
 export const app = express(); //app instance
+
+app.use("/tasks", tasksRouter); //modular routing for maintainability , become /tasks/ and /tasks/:id in the final API
+
 
 app.disable("x-powered-by"); //security: hide tech stack, because hackers   love that info
 app.set("trust proxy", 1); //trust first proxy because we might be behind one and need real IPs for rate limiting
