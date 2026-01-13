@@ -19,6 +19,12 @@ import TaskForm from "../src/components/TaskForm";
 import TaskItem from "../src/components/TaskItem";
 import { theme } from "../src/theme/theme";
 import { useTasks } from "../src/hooks/useTask";
+<<<<<<< HEAD
+import { tasksApi } from "../src/services/taskApi";
+
+
+=======
+>>>>>>> origin/main
 
 export default function Home() {
   const { tasks, addTask } = useTasks();
