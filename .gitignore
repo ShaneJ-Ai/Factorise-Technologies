@@ -206,4 +206,8 @@ apps/**/build/
 apps/mobile/assets/
 mobile/assets/
 
+# Ignore everything in DevNotes directory 
+DevNotes/
+.devnotes
+
 
