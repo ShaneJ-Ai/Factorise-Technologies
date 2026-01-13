@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/prisma.js
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
 import { PrismaClient } from "@prisma/client";

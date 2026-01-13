@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/app.js
+
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
 //middleware + routes

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: LicenseRef-LICENSE
+// src/server.js
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
 

@@ -1,5 +1,12 @@
+<<<<<<< HEAD
+// prisma/schema.prisma
+//SPDX-License-Identifier: LicenseRef-LICENSE
+//(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
+
+=======
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
+>>>>>>> origin/main
 
 generator client {
   provider = "prisma-client-js"
