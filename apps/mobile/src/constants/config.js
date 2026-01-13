@@ -1,4 +1,5 @@
 //SPDX-License-Identifier: LicenseRef-LICENSE
+<<<<<<< HEAD
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 // apps/mobile/src/constants/config.js
 
@@ -8,3 +9,6 @@ export const config = {
   // Physical device: http://YOUR-LAN-IP:3001
   API_BASE_URL: "http://localhost:3001",
 };
+=======
+//(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
+>>>>>>> origin/main

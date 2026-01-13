@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 //SPDX-License-Identifier: LicenseRef-LICENSE
+=======
+// src/app.js
+
+>>>>>>> origin/main
 //(c) Copyright 2026 Shane Flaten (CodingAce), all rights reserved.
 
 // src/app.js

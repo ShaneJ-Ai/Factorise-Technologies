@@ -3,6 +3,7 @@
 //app/mobile/src/hooks/useTask.js
 
 
+<<<<<<< HEAD
 import { useCallback, useEffect, useState } from "react";
 import { tasksApi } from "../services/tasksApi";
 
@@ -72,3 +73,22 @@ export function useTasks() {
 
 //   return { tasks, addTask };
 // }
+=======
+import { useCallback, useState } from "react";
+
+export function useTasks() {
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = useCallback((t) => {
+    const newTask = {
+      id: String(Date.now()) + Math.random().toString(16).slice(2),
+      title: t.title,
+      description: t.description,
+      createdAt: new Date().toISOString(),
+    };
+    setTasks((prev) => [newTask, ...prev]);
+  }, []);
+
+  return { tasks, addTask };
+}
+>>>>>>> origin/main

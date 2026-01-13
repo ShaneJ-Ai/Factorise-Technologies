@@ -206,8 +206,11 @@ apps/**/build/
 apps/mobile/assets/
 mobile/assets/
 
+<<<<<<< HEAD
 # Ignore everything in DevNotes directory 
 DevNotes/
 .devnotes
 
+=======
+>>>>>>> origin/main
 
