@@ -177,6 +177,7 @@ lerna-debug.log
 *.user
 *.userosscache
 
+
 # Expo / React Native
 .expo/
 .expo-shared/
@@ -204,3 +205,5 @@ apps/**/build/
 # Ignore mobile assets
 apps/mobile/assets/
 mobile/assets/
+
+
